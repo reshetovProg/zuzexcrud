@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=${DBPROJECT_USERNAME}
+      - POSTGRES_PASSWORD=${DBPROJECT_PASSWORD}
+      - POSTGRES_DB=${DBPROJECT_DBNAME}
+    ports:
+      - '${DBPROJECT_PORT}:5432'

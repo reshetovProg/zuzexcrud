@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DBPROJECT_HOST}:${DBPROJECT_PORT}/${DBPROJECT_DBNAME}
+    username: ${DBPROJECT_USERNAME}
+    password: ${DBPROJECT_PASSWORD}
+    driverClassName: org.postgresql.Driver
+  liquibase:
+    enabled: false
